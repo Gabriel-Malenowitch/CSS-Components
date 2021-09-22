@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(11, 18, 61);
+        }
+        #Load--Icon{
+            /* position:  */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            /* Load Icon:  */
+            height: 50px;
+            width: 50px;
+            border: solid rgba(128, 128, 128, 0.164) 4px;
+            border-radius: 50px;
+            background-color: transparent;
+            border-top-color: #EED;
+            animation: rotation 1s linear infinite;
+        }
+        @keyframes rotation {
+            from{
+                transform: rotate(0deg);
+                
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="Load--Icon"></div>
+</body>
+</html>

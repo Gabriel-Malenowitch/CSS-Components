@@ -1,0 +1,92 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #FFF;
+}
+ul{
+    margin: 25px;
+    font-size: 1.5rem;
+}
+li{
+    margin-left: 10px;
+}
+body{
+    background-color: rgb(25, 25, 53);
+    /* overflow-x: hidden; */
+}
+nav{
+    background-color: rgb(1, 18, 41);
+    height: 60px;
+}
+#nav--ico--image{
+    height: 40px;
+    margin: 8px;
+    border: solid 2px #fff;
+    border-radius: 15px;
+}
+#nav--ico--menu{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 40px;
+    width: 40px;
+    margin: 8px;
+    font-size: 30px;
+}
+#nav--ico--menu:hover{
+    color: rgba(128, 255, 0, 0.87);
+}
+#nav--ico--menu:active{
+    color: rgb(0, 217, 255);
+}
+
+#list--nav{
+    position: absolute;
+    right: 0px;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+    border:solid 2px white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.1s;
+    visibility: hidden;
+}
+.list--nav--item{
+    display: flex;
+    align-items: center;
+    height: 37px;
+    width: 180px;
+    margin: 8px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.301);
+    border-radius: 5px;
+}
+.list--nav--item:hover{
+    color: rgba(128, 255, 0, 0.87);
+    border-color: rgba(128, 255, 0, 0.87);
+}
+
+#Load--Icon{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border: solid rgba(128, 128, 128, 0.164) 4px;
+    border-radius: 50px;
+    background-color: transparent;
+    border-top-color: #EED;
+    animation: rotation 1s linear infinite;
+    margin: 10px;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
