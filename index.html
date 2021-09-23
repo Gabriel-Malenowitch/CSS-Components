@@ -34,6 +34,33 @@
             <p>Load--Icon: </p>
             <div id="Load--Icon"></div>
         </li>
+        <li>
+            <p>Dom button: 
+                <button id="button--open--doom">
+                     click 
+                </button>
+            </p>
+            <div id="doom">
+                <div id="doom--sub">
+                    <input class="doom--element" type="text" >
+                    <input class="doom--element" type="text">
+                    <input class="doom--element" type="text">
+                    <button id="doom--ok">Ok</button>
+                </div>
+            </div>
+            <script>
+                let open = document.getElementById("button--open--doom")
+                let close = document.getElementById("doom--ok")
+                let mood = document.getElementById("doom")
+                console.log(mood.style.visibility)
+                open.addEventListener("click", (e)=>{
+                    mood.style.visibility = 'visible'
+                });
+                close.addEventListener("click", (e)=>{
+                    mood.style.visibility = 'hidden'
+                });
+            </script>
+        </li>
     </ul>
 
 </body>

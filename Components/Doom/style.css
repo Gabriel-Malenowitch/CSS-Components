@@ -1,0 +1,28 @@
+body{
+    background-color: #222;
+}
+#doom{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    border: solid 2px white;
+    height: 350px;
+    width: 400px;
+    visibility: hidden;
+    border-radius: 3px;
+}
+#doom--sub{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#doom--element{
+    display: block;
+    background: transparent;
+    border-color: white;
+    visibility: hidden;
+}
